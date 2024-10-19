@@ -111,7 +111,7 @@ def handle_buy(tokens, conn):
 
 #SELL
 def handle_sell(tokens, conn):
-    if len(tokens) != 6:
+    if len(tokens) != 5:
         return "403 Message format error\n", False
     _, card_name, count, price_per_card, owner_id = tokens
     count = int(count)
