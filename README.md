@@ -20,25 +20,25 @@
 
 ### Command Implementations
 1. BUY
-     > Format: BUY <cardName> <cardType> <rarity> <price> <count> <ownerID>\n
-     > Function Definition: Upon launch of the server, a database with two tables (Users & Cards) will be created.\n\n
+     > Format: BUY <cardName> <cardType> <rarity> <price> <count> <ownerID>
+     > Function Definition: Upon launch of the server, a database with two tables (Users & Cards) will be created.
 
-     > Users table will have a single user to start and balance will default to $100.\n
+     > Users table will have a single user to start and balance will default to $100.
      
      > 200 OK if BUY is within parameters and will add the purchased card to Cards table; 403 if message format is incorrect; 404 if not enough balance to purchase.
 
 2. SELL
-     > Format: SELL <count> <price> <ownerID>\n
-     > Function Definition: Allows user to sell a card listed in their inventory\n\n
+     > Format: SELL <count> <price> <ownerID>
+     > Function Definition: Allows user to sell a card listed in their inventory
      
      > 200 OK if SELL is within parameters and will remove the quantity of sold card(s) from Cards table; 403 if message format is incorrect; 404 if card is not available to be sold.
 
 3. LIST
-     > Format: LIST <ownerID>\n
+     > Format: LIST <ownerID>
      > Function Definition: Lists all cards that are currently contained in Users inventory.
 
 4. BALANCE
-     > Format: BALANCE <ownerID>\n
+     > Format: BALANCE <ownerID>
      > Function Definition: Provides the Users monetary balance.
 
 5. QUIT: Quits the program by closing the client-side.
